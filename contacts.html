@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <script src="contacts.js"></script>
+    <meta charset="UTF-8">
+    <title>Contacts Book</title>
+
+    <link rel="stylesheet" href="contacts.css">
+
+</head>
+
+<body onload="fetchContacts()">
+    <div id="div1">
+        <div>
+            <h1> Contacts</h1>
+        <p>
+            <a href="#" id="pix" onclick="offSaveChanges()">
+            <img src="add.png" alt="Add" class="add">
+            </a>
+        </p>
+        </div>
+            
+
+        <div class="headings">
+            <table>
+                <tr>
+                    <td class="favourites">FAVOURITES</td>
+                    <td>ALL</td>
+                    <td>BLACK LIST</td>
+                </tr>
+            </table>
+            
+                    
+        </div>
+
+        <br>
+
+        <div id="container" class="container"> 
+            <div id = "empty" class="empty">Your contact list is empty</div>
+            <div id="outputs"></div>
+
+        
+        </div>
+    </div>
+
+
+    <div id="div2" class = "toggle">
+        <header>
+            <h1>Add new contact</h1>
+        </header>
+        
+        <div class="details">
+        
+        <form id="myForm"> 
+        
+        <fieldset>
+        <p>
+            <label for="name">Name: </label>
+            <input type="text" id="name" size="32">
+        </p>
+
+        <p>
+            <label for="number">Number: </label>
+            <input type="tel" id="number">
+        </p>
+        
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+        </p>
+
+    
+            <button type="button" class="cancel" id="cancel">Cancel</button>
+            <button type="submit" class="save" id="save"> Save </button>
+            <button type="submit" class="save toggle" id="saveChanges"> Save Changes </button>
+        
+            
+        </fieldset>   
+        </form>
+    </div>
+
+    
+
+</body>
